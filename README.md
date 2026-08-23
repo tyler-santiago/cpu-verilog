@@ -18,5 +18,8 @@ iverilog -o sim.out rtl/adder_half.v rtl/adder_full.v rtl/adder_8bit.v tb/adder_
 Shifter:
 iverilog -o sim.out rtl\shifter.v tb\shifter_tb.v
 
+Logic unit:
+iverilog -o sim.out rtl\logic_unit.v tb\logic_unit_tb.v
+
 After compiling, to run the respective testbench:
 vvp sim.out
